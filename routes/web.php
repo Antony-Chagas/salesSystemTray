@@ -4,6 +4,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SellerController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SaleController;
+use App\Http\Controllers\SendEmailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,3 +50,5 @@ Route::get('/sales?{seller=}', function($seller){
 Route::resource('sales', SaleController::class);
 
 //--
+
+Route::get('/send-email', [SendEmailController::class, 'sendEmail'])->name('sale.send-email');

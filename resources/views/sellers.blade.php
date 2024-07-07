@@ -12,8 +12,38 @@
 <body>
     <h2>Lista de vendedores</h2>
 
-    <a href="{{ route('sellers.create') }}" class='btn btn-primary'> Incluir novo vendedor </a> <br><br>
+    @if (session()->has('messagemEmail'))
 
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{session()->get('messagemEmail')}}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    @endif
+
+    </div>
+
+    @if (session()->has('messagemEmailErro'))
+
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{session()->get('messagemEmailErro')}}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="alert alert-danger" role="alert" style="width: 100%; text-align: center;">
+
+    </div>
+
+    @endif
+
+    <div class="continer">
+
+    </div>
+    <a href="{{ route('sellers.create') }}" class='btn btn-primary'> Incluir novo vendedor </a>
+    <a href="{{ route('sale.send-email') }}" class='btn btn-info'> Enviar E-mail</a> <br><br>
     <table class="table table-hover">
         <thead>
             <tr>

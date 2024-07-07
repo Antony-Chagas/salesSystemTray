@@ -44,7 +44,7 @@
                     <input class="form-control" type="text" name="email" value="{{$seller->email}}">
                 </div>
                 <div class="mb-3">
-                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    <button type="submit" class="btn btn-primary">Editar</button>
                 </div>
             </form>
 

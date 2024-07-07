@@ -10,16 +10,15 @@
 </head>
 
 <body>
+    <div>
+        <div class="jumbotron">
+            <h1 class="display-4">Sistema de controle de vendas.</h1>
 
+            <hr class="my-4">
+            <p class="lead">Nesse sistema você pode incluir vários vendedores e cadastrar suas vendas, comissão calculada de forma automática.</p>
+            <a class="btn btn-primary btn-lg" href="/sellers" role="button">Acessar</a>
 
-
-    <div class="jumbotron">
-        <h1 class="display-4">Sistema de controle de vendas.</h1>
-
-        <hr class="my-4">
-        <p class="lead">Nesse sistema você pode incluir vários vendedores e cadastrar suas vendas, comissão calculada de forma automática.</p>
-        <a class="btn btn-primary btn-lg" href="/sellers" role="button">Acessar</a>
-
+        </div>
     </div>
 
 </body>
