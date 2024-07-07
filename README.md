@@ -1,66 +1,93 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Sistema de vendas 🛍️
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Projeto para processo seletivo da vaga de programador Júnior na empresa Tray.
 
-## About Laravel
+## Indice
+* [Índice](https://github.com/Antony-Chagas/salesSystem/edit/main/README.md#indice)
+* [Descrição do Projeto](https://github.com/Antony-Chagas/salesSystem/blob/main/README.md#descri%C3%A7%C3%A3o-do-projeto-)
+* [Tecnologias utilizadas](https://github.com/Antony-Chagas/salesSystem/blob/main/README.md#tecnologias-utilizadas-)
+* [Funcionalidades do projeto](https://github.com/Antony-Chagas/salesSystem/edit/main/README.md#indice)
+* [Como de usar a aplicação](https://github.com/Antony-Chagas/salesSystem/edit/main/README.md#indice)
+* [Banco de dados](https://github.com/Antony-Chagas/salesSystem/edit/main/README.md#indice)
+* [Paginas do projeto](https://github.com/Antony-Chagas/salesSystem/edit/main/README.md#indice)
+  
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Descrição do Projeto 📰
+* Sistema para cadastro de vendas para vendedores.
+* Sistema desenvolvido para ajudar e facilitar o controle das vendas, podendo incluir vendas para seus respectivos vendedores, além de conseguir atualizar, visualizar e excluir vendas e vendedores.
+  ![image](https://github.com/Antony-Chagas/salesSystem/assets/104728389/e7b874e8-48f2-4e88-a502-e6274d95390e)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Tecnologias utilizadas 🖥
+* **XAMPP** Foi utilizada a versão 3.3.0, utilizado para ativar o servidor local e uso do PHP e banco de dados.
+* **PHP 8:** Foi utilizada a versão  PHP 8.2.12, utilizado para criação do do BackEnd do projeto.
+* **bootstrap:** Foi utilizada a versão 4.5, utilizado para configuração do front, deixando o sistema mais funcional e mais profissional
+* **MySQL:** Banco utilizado na aplicação.
+* **Composer:** Utilizado para instalação do Framework laravel
+* **Framework laravel** Foi utilizada a versão 11x.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Funcionalidades do projeto 🛠️
 
-## Learning Laravel
+* Criar, deletar, atualizar e visualizar vendas realizadas.
+* Criar, deletar, atualizar e visualizar vendedores.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Como usar a aplicação ⚙️
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### O que deve ter na sua máquina:
+* **XAMPP**: Você pode fazer o download pelo link https://www.apachefriends.org/download.html <br>
+  Após fazer a instalação acesse a pasta C:\xampp\php\php.ini e habilite `extension=pdo_mysql`, basta apenas remover o ";"
+  ![image](https://github.com/Antony-Chagas/salesSystem/assets/104728389/ce1e5437-e1ba-49ee-9a5b-0e04e6b8351f)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+* **Editor de código**: O que foi utilizado no desenvolvimento foi Visual Studio Code, download https://code.visualstudio.com/download
+* Acesse o XAMPP e ligue o Apache e MySQL
+  
+ ![image](https://github.com/Antony-Chagas/salesSystem/assets/104728389/f5fe1b87-6776-4039-8fb7-8e9220469452)
 
-## Laravel Sponsors
+* Instale o laravel como o comando:
+~~~php
+composer create-project laravel/laravel example-app
+~~~ 
+* Ative o servidor do laravel como o comando:
+~~~php
+php artisan serve
+~~~
+    
+## Banco de dados
+* Crie um novo banco de dados (Acesse o banco pelo XAMPP, na linha MySql clique em Admin).
+* Configure a conexão com o banco de dados no arquivo .env localizado na raiz do projeto. Exemplo de configuração:
+~~~php
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=salessystem
+DB_USERNAME=root
+DB_PASSWORD=
+~~~
+* Execute as migrações do banco de dados para criar as tabelas necessárias.
+~~~php
+php artisan migrate
+~~~
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Paginas do projeto
 
-### Premium Partners
+### `Litas de vendedores:`
+![image](https://github.com/Antony-Chagas/salesSystem/assets/104728389/8396846c-78ee-426e-9de3-e9d2d05ccbda)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### `Vendas dos vendedores:`
+![image](https://github.com/Antony-Chagas/salesSystem/assets/104728389/29d54f65-3a8d-406f-b552-eefc2f9c5a83)
 
-## Contributing
+### `Vendedor:`
+* `Editar` 
+![image](https://github.com/Antony-Chagas/salesSystem/assets/104728389/99323925-0a2b-4ab5-ba51-94ec553ffe51)
+* `Criar`
+![image](https://github.com/Antony-Chagas/salesSystem/assets/104728389/6499ad89-b01a-4feb-9b2d-9aa19653e456)
+* `Deletar`
+![image](https://github.com/Antony-Chagas/salesSystem/assets/104728389/ff747b84-aa04-4644-a43e-6fa9e9f88569)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### `Vendas`
+* `Editar`
+![image](https://github.com/Antony-Chagas/salesSystem/assets/104728389/ba809475-4620-4d06-b386-7a7a84088663)
+* `Criar`
+![image](https://github.com/Antony-Chagas/salesSystem/assets/104728389/3eaf1b09-87a1-4b5b-bf5f-fdf4f4e0096a)
+* `Deletar`
+![image](https://github.com/Antony-Chagas/salesSystem/assets/104728389/9bc2be89-5422-4ef0-a4c3-32ded5b0a650)
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
