@@ -3,14 +3,14 @@
 Projeto para processo seletivo da vaga de programador Júnior na empresa Tray.
 
 ## Indice
-* [Índice](https://github.com/Antony-Chagas/salesSystem/edit/main/README.md#indice)
-* [Descrição do Projeto](https://github.com/Antony-Chagas/salesSystem/blob/main/README.md#descri%C3%A7%C3%A3o-do-projeto-)
-* [Tecnologias utilizadas](https://github.com/Antony-Chagas/salesSystem/blob/main/README.md#tecnologias-utilizadas-)
-* [Funcionalidades do projeto](https://github.com/Antony-Chagas/salesSystem/edit/main/README.md#indice)
-* [Como de usar a aplicação](https://github.com/Antony-Chagas/salesSystem/edit/main/README.md#indice)
-* [Banco de dados](https://github.com/Antony-Chagas/salesSystem/edit/main/README.md#indice)
-* [Configurações do envio de email](https://github.com/Antony-Chagas/salesSystemTray/blob/main/README.md#configura%C3%A7%C3%B5es-do-envio-de-email-)
-* [Paginas do projeto](https://github.com/Antony-Chagas/salesSystem/edit/main/README.md#indice)
+* [Índice](https://github.com/Antony-Chagas/salesSystemTray/edit/main/README.md#indice)
+* [Descrição do Projeto](https://github.com/Antony-Chagas/salesSystemTray?tab=readme-ov-file#descri%C3%A7%C3%A3o-do-projeto-)
+* [Tecnologias utilizadas](https://github.com/Antony-Chagas/salesSystemTray?tab=readme-ov-file#tecnologias-utilizadas-)
+* [Funcionalidades do projeto](https://github.com/Antony-Chagas/salesSystemTray?tab=readme-ov-file#funcionalidades-do-projeto-%EF%B8%8F)
+* [Como usar a aplicação](https://github.com/Antony-Chagas/salesSystemTray?tab=readme-ov-file#como-usar-a-aplica%C3%A7%C3%A3o-%EF%B8%8F)
+* [Banco de dados](https://github.com/Antony-Chagas/salesSystemTray?tab=readme-ov-file#banco-de-dados)
+* [Configurações do envio de email](https://github.com/Antony-Chagas/salesSystemTray?tab=readme-ov-file#configura%C3%A7%C3%B5es-do-envio-de-email-)
+* [Paginas do projeto](https://github.com/Antony-Chagas/salesSystemTray?tab=readme-ov-file#paginas-do-projeto)
 
 
 ## Descrição do Projeto 📰
