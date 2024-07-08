@@ -74,7 +74,8 @@ php artisan migrate
  Foi utilizado Mailtrap para envio do email, o mesmo possui uma versão gratuita, com algumas limitações, mas bem funcional.
  
  Site Mailtrap: https://mailtrap.io/
-
+* Esse sistema cria um **servidor fake**, sendo assim, nao é enviado a caixa real do email.
+ 
  Configuração de conexão feita no arquivo .env, os dados conexão varia para cada conta, acesse o sistema mailtrap e verifique os dados específico.
  
  Exemplo de configuração:
