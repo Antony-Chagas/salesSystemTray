@@ -38,12 +38,12 @@
                 <input type="hidden" name="_method" value="PUT">
                 <div class="mb-3">
                     <label for="nome" class="form-label">Valor da venda:</label>
-                    <input class="form-control" type="text" name="sale_value" value="{{$sale->sale_value}}">
+                    <input class="form-control" type="number" step="0.01" name="sale_value" value="{{$sale->sale_value}}">
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Comissão:</label>
 
-                    <input class="form-control" type="text" name="commission" value="{{$sale->commission}}">
+                    <input class="form-control" type="number" step="0.01" name="commission" value="{{$sale->commission}}">
                 </div>
                 <div class="mb-3">
                     <label for="sale_date" class="form-label">Data da venda:</label>

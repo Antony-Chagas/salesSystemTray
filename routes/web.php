@@ -17,9 +17,10 @@ use App\Http\Controllers\SendEmailController;
 |
 */
 
+// Rota para pagina inicial
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-//--
+//Rotas vendedor
 
 //Route::get('/sellers', [SellerController::class, 'index'])->name('sellers.index');
 //Route::get('/sellers/create', [SellerController::class, 'create'])->name('sellers.create');
@@ -29,15 +30,10 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 //Route::put('/sellers/{seller}', [SellerController::class, 'update'])->name('sellers.update');
 //Route::delete('/sellers/{seller}', [SellerController::class, 'destroy'])->name('sellers.destroy');
 
+//Configurando as rotas acima conforme a documentação do laravel, pode ser substituída com apenas a rota abaixo
 Route::resource('sellers', SellerController::class);
 
-//--
-
-Route::get('/sales?{seller=}', function($seller){
-    return 'ID' . $seller;
-});
-
-//--
+//Rota vendas
 
 //Route::get('/sales', [SaleController::class, 'index'])->name('sales.index');
 //Route::get('/sales/create', [SaleController::class, 'create'])->name('sales.create');
@@ -47,8 +43,8 @@ Route::get('/sales?{seller=}', function($seller){
 //Route::put('/sales/{sale}', [SaleController::class, 'update'])->name('sales.update');
 //Route::delete('/sales/{sale}', [SaleController::class, 'destroy'])->name('sales.destroy');
 
+//Configurando as rotas acima conforme a documentação do laravel, pode ser substituída com apenas a rota abaixo
 Route::resource('sales', SaleController::class);
 
-//--
-
+//Rota de envio de e-mail
 Route::get('/send-email', [SendEmailController::class, 'sendEmail'])->name('sale.send-email');

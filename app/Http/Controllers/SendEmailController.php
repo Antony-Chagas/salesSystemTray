@@ -31,8 +31,6 @@ class SendEmailController extends Controller
            $envio = Mail::to(env('MAIL_TO'))->send(new SendMail($sales));
 
             // Redirecionar de volta à pagina anterior 
-            
-
             if ($envio) {
                 return back()->with('messagemEmail', 'E-mail enviado');
             }
