@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -41,7 +40,7 @@
                 <div class="mb-3">
                     <label for="sale_date" class="form-label">Data da venda:</label>
 
-                    <input class="form-control" type="date" name="sale_date" >
+                    <input class="form-control" type="date" name="sale_date">
                 </div>
                 <div class="mb-3">
                     <label for="seller_id" class="form-label">ID do vendedor:</label>

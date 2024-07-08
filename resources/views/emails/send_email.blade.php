@@ -15,7 +15,7 @@
 
     <p>Vendas realizasdas hoje:</p>
 
-    
+
 
     <table class="table">
         <thead>
@@ -27,17 +27,17 @@
             </tr>
         </thead>
         <tbody>
-         @foreach($sales as $sale)
+            @foreach($sales as $sale)
             <tr>
                 <th scope="row">{{ $sale->id }}</th>
                 <td>R$ {{ number_format($sale->sale_value, 2,',','.') }}</td>
-                <td>R$ {{  number_format($sale->commission, 2,',','.') }}</td>
+                <td>R$ {{ number_format($sale->commission, 2,',','.') }}</td>
                 <td>{{ $sale->seller_id }}</td>
             </tr>
             @endforeach
         </tbody>
     </table>
-    
+
     <P>E-mail enviado pelo sisema de vendas!</P>
 
 </body>

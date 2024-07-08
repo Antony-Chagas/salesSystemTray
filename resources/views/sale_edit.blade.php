@@ -20,14 +20,16 @@
             </div>
             @endif
 
-        </div>
+            @if (session()->has('messagemErro'))
+            <div class="alert alert-danger" role="alert" style="width: 100%; text-align: center;">
+                {{session()->get('messagemErro')}}
+            </div>
+            @endif
+            <div class="col">
 
-        @if (session()->has('messagemErro'))
-        <div class="alert alert-danger" role="alert" style="width: 100%; text-align: center;">
-            {{session()->get('messagemErro')}}
-        </div>
-        @endif
-        <div class="col">
+            </div>
+
+
 
             <h2>Editar venda</h2>
 
