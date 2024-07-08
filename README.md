@@ -52,11 +52,11 @@ Projeto para processo seletivo da vaga de programador Júnior na empresa Tray.
  ![image](https://github.com/Antony-Chagas/salesSystem/assets/104728389/f5fe1b87-6776-4039-8fb7-8e9220469452)
 
 
-* Instale o laravel como o comando:
+* Instale o laravel com o comando:
 ~~~php
 composer create-project laravel/laravel example-app
 ~~~ 
-* Ative o servidor do laravel como o comando:
+* Ative o servidor do laravel com o comando:
 ~~~php
 php artisan serve
 ~~~
