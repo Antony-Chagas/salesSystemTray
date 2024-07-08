@@ -71,9 +71,10 @@ DB_PASSWORD=
 php artisan migrate
 ~~~
 ## Configurações do envio de email 📩
- Foi utilizado Mailtrap para envio do email, o mesmo possui uma versão gratuita, com algumas limitações, mas bem funcional.
- 
+ Foi utilizado Mailtrap para envio do email, o mesmo possui uma versão gratuita, com algumas limitações, mas bem funcional. 
  Site Mailtrap: https://mailtrap.io/
+ * Esse sistema cria um servidor Fake, sendo assim, o e-mail não é encaminhado a caixa do email real.
+
  Configuração de conexão feita no arquivo .env, os dados conexão varia para cada conta, acesse o sistema mailtrap e verifique os dados específico.
  
  Exemplo de configuração:
