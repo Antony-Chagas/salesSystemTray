@@ -9,12 +9,13 @@ Projeto para processo seletivo da vaga de programador Júnior na empresa Tray.
 * [Funcionalidades do projeto](https://github.com/Antony-Chagas/salesSystem/edit/main/README.md#indice)
 * [Como de usar a aplicação](https://github.com/Antony-Chagas/salesSystem/edit/main/README.md#indice)
 * [Banco de dados](https://github.com/Antony-Chagas/salesSystem/edit/main/README.md#indice)
+* [Configurações do envio de email](https://github.com/Antony-Chagas/salesSystemTray/edit/main/README.md#configura%C3%A7%C3%B5es-do-envio-de-email-)
 * [Paginas do projeto](https://github.com/Antony-Chagas/salesSystem/edit/main/README.md#indice)
-  
 
 ## Descrição do Projeto 📰
 * Sistema para cadastro de vendas para vendedores.
 * Sistema desenvolvido para ajudar e facilitar o controle das vendas, podendo incluir vendas para seus respectivos vendedores, além de conseguir atualizar, visualizar e excluir vendas e vendedores.
+* Além de poder encaminhar um email diário com todas as vendas feitas naquele dia.
   ![image](https://github.com/Antony-Chagas/salesSystem/assets/104728389/e7b874e8-48f2-4e88-a502-e6274d95390e)
 
 ## Tecnologias utilizadas 🖥
@@ -24,6 +25,7 @@ Projeto para processo seletivo da vaga de programador Júnior na empresa Tray.
 * **MySQL:** Banco utilizado na aplicação.
 * **Composer:** Utilizado para instalação do Framework laravel
 * **Framework laravel** Foi utilizada a versão 11x.
+* **Mailtrap** Utilizado para configurar o sistema e mail
 
 ## Funcionalidades do projeto 🛠️
 
@@ -66,7 +68,32 @@ DB_PASSWORD=
 ~~~php
 php artisan migrate
 ~~~
+## Configurações do envio de email 📩
+ Foi utilizado Mailtrap para envio do email, o mesmo possui uma versão gratuita, com algumas limitações, mas bem funcional.
+ 
+ Site Mailtrap: https://mailtrap.io/
 
+ Configuração de conexão feita no arquivo .env, a os dados conexão varia para cada conta, acesse o sistema mailtrap e verifique os dados específico.
+ 
+ Exemplo de configuração:
+~~~php
+MAIL_MAILER=smtp
+MAIL_HOST=sandbox.smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME="42b9a2fab1d6e9"
+MAIL_PASSWORD="76221eb895eab7"
+MAIL_ENCRYPTION=null
+MAIL_FROM_ADDRESS="antony.thiago445@gmail.com"
+MAIL_FROM_NAME="${APP_NAME}"
+MAIL_TO="antony.thiago445@gmail.com"
+~~~
+### `Botão de envio`
+![image](https://github.com/Antony-Chagas/salesSystemTray/assets/104728389/5db94849-e3bb-4209-9c96-41b7dbda8903)
+
+### `Formato que é enviado os E-mails`
+![image](https://github.com/Antony-Chagas/salesSystemTray/assets/104728389/986999bf-2023-4872-8afa-e1b0a0060a71)
+
+ 
 ## Paginas do projeto
 
 ### `Litas de vendedores:`
