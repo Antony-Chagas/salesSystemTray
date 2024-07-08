@@ -15,9 +15,7 @@ class SaleController extends Controller
         
     }
 
-    /**
-     * Display a listing of the resource.
-     */
+    // Exiba uma listagem de vendas 
     public function index()
     {
         $sales = $this->sale->all();
@@ -25,17 +23,13 @@ class SaleController extends Controller
         return view('sales', ['sales' => $sales]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
+    // Tela de criação de vendas
     public function create()
     {
         return view('sale_create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+    // Criar venda
     public function store(Request $request)
     {
       
@@ -56,25 +50,19 @@ class SaleController extends Controller
 
     }
 
-    /**
-     * Display the specified resource.
-     */
+    // Exibir uma vendeda
     public function show(Sale $sale)
     {
         return view('sale_show', ['sale'=> $sale]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
+    // Criar formuralario de edição
     public function edit(Sale $sale)
     {
         return view('sale_edit', ['sale'=> $sale]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
+    // Editar venda
     public function update(Request $request, string $id)
     {
         $updated = $this->sale->where('id', $id)->update($request->except(['_token', '_method']));
@@ -85,9 +73,7 @@ class SaleController extends Controller
         return redirect()->back()->with('messagemErro', 'Erro na atualização');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
+    //Deletar venda
     public function destroy(string $id)
     {
         $this->sale->where('id', $id)->delete();

@@ -23,7 +23,7 @@
                 {{session()->get('messagem')}}
             </div>
             @endif
-            
+
             @if (session()->has('messagemErro'))
             <div class="alert alert-danger" role="alert" style="width: 100%; text-align: center;">
                 {{session()->get('messagemErro')}}
@@ -45,7 +45,7 @@
                 <div class="mb-3">
                     <label for="email" class="form-label">Email:</label>
 
-                    <input class="form-control" type="text" name="email">
+                    <input class="form-control" type="email" name="email">
                 </div>
                 <div class="mb-3">
                     <button type="submit" class="btn btn-primary">Cadastrar</button>

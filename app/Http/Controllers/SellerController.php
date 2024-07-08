@@ -13,9 +13,7 @@ class SellerController extends Controller
     {
         $this->seller = new Seller();
     }
-    /**
-     * Display a listing of the resource.
-     */
+    // Exiba uma listagem de vendedores 
     public function index()
     {
         $seller = $this->seller->all();
@@ -23,17 +21,13 @@ class SellerController extends Controller
     
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
+    // Tela de criação de vendedor
     public function create()
     {
         return view('seller_create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+    // Criar vendedor 
     public function store(Request $request)
     {
         $created = $this->seller->create([
@@ -47,26 +41,20 @@ class SellerController extends Controller
         return redirect()->back()->with('messagemErro', 'Erro na cadastrado');
     }
 
-    /**
-     * Display the specified resource.
-     */
+    // Exibir um vendedor
     public function show(seller $seller)
     {
         return view('seller_show', ['seller' => $seller]);
-        return view('sales', ['seller' => $seller]);
+        
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
+    // Criar formuralario de edição
     public function edit(Seller $seller)
     {
         return view('seller_edit', ['seller' => $seller]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
+    // Editar vendedor
     public function update(Request $request, string $id)
     {
         $updated = $this->seller->where('id', $id)->update($request->except(['_token', '_method']));
@@ -77,9 +65,7 @@ class SellerController extends Controller
         return redirect()->back()->with('messagemErro', 'Erro na atualização');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
+    //Deletar vendedor
     public function destroy(string $id)
     {
         $this->seller->where('id', $id)->delete();
