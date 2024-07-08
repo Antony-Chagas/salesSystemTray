@@ -36,15 +36,20 @@ Projeto para processo seletivo da vaga de programador Júnior na empresa Tray.
 ## Como usar a aplicação ⚙️
 
 ### O que deve ter na sua máquina:
+
+* **Editor de código**: O que foi utilizado no desenvolvimento foi Visual Studio Code, download https://code.visualstudio.com/download
+* Faça o download do composer para instalar as dependecias. Site https://getcomposer.org/ 
+
 * **XAMPP**: Você pode fazer o download pelo link https://www.apachefriends.org/download.html <br>
   Após fazer a instalação acesse a pasta C:\xampp\php\php.ini e habilite `extension=pdo_mysql`, basta apenas remover o ";"
   
   ![image](https://github.com/Antony-Chagas/salesSystem/assets/104728389/ce1e5437-e1ba-49ee-9a5b-0e04e6b8351f)
 
-* **Editor de código**: O que foi utilizado no desenvolvimento foi Visual Studio Code, download https://code.visualstudio.com/download
+
 * Acesse o XAMPP e ligue o Apache e MySQL
   
  ![image](https://github.com/Antony-Chagas/salesSystem/assets/104728389/f5fe1b87-6776-4039-8fb7-8e9220469452)
+
 
 * Instale o laravel como o comando:
 ~~~php
