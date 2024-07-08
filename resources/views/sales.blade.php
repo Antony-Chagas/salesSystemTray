@@ -10,11 +10,11 @@
 </head>
 
 <body>
-   
-    <?php 
-     $id_vendedor = $_GET['sellerID'];
-     $name_vendedor = $_GET['sellerName'];
-     $email_vendedor = $_GET['sellerEmail'];
+
+    <?php
+    $id_vendedor = $_GET['sellerID'];
+    $name_vendedor = $_GET['sellerName'];
+    $email_vendedor = $_GET['sellerEmail'];
     ?>
 
     <table class="table">
@@ -23,8 +23,7 @@
                 <th scope="col">ID do vendedor</th>
                 <th scope="col">Nome do endedor</th>
                 <th scope="col">E-mail do endedor</th>
-                <th scope="col">Ações</th
-            </tr>
+                <th scope="col">Ações</th </tr>
         </thead>
         <tbody>
             <tr>
@@ -50,13 +49,13 @@
 
             @foreach($sales as $sale)
             @if($sale -> seller_id == $id_vendedor)
-                <?php
-              $d = explode('-', $sale -> sale_date);
-              $write_date = $d[2] . "/" . $d[1] . "/" . $d[0];
+            <?php
+            $d = explode('-', $sale->sale_date);
+            $write_date = $d[2] . "/" . $d[1] . "/" . $d[0];
 
-              $sale_value = number_format($sale -> sale_value, 2, ',', '.');
-              $commission = number_format($sale -> commission, 2, ',', '.');
-              ?>
+            $sale_value = number_format($sale->sale_value, 2, ',', '.');
+            $commission = number_format($sale->commission, 2, ',', '.');
+            ?>
             <tr>
                 <th scope="row">{{$sale -> id}}</th>
                 <th scope="row">{{$sale_value}}</th>

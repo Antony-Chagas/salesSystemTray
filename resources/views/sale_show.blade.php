@@ -22,13 +22,13 @@
             </tr>
         </thead>
         <tbody>
-        <?php
-              $d = explode('-', $sale -> sale_date);
-              $write_date = $d[2] . "/" . $d[1] . "/" . $d[0];
+            <?php
+            $d = explode('-', $sale->sale_date);
+            $write_date = $d[2] . "/" . $d[1] . "/" . $d[0];
 
-              $sale_value = number_format($sale -> sale_value, 2, ',', '.');
-              $commission = number_format($sale -> commission, 2, ',', '.');
-              ?>
+            $sale_value = number_format($sale->sale_value, 2, ',', '.');
+            $commission = number_format($sale->commission, 2, ',', '.');
+            ?>
             <tr>
                 <th scope="row">{{$sale -> id}}</th>
                 <th scope="row">{{$sale_value}}</th>

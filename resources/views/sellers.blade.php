@@ -22,8 +22,6 @@
     </div>
     @endif
 
-    </div>
-
     @if (session()->has('messagemEmailErro'))
 
     <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -31,13 +29,11 @@
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
-    </div>
-
-    <div class="alert alert-danger" role="alert" style="width: 100%; text-align: center;">
+        @endif
 
     </div>
 
-    @endif
+
 
     <div class="continer">
 
