@@ -11,7 +11,7 @@ Projeto para processo seletivo da vaga de programador Júnior na empresa Tray.
 * [Banco de dados](https://github.com/Antony-Chagas/salesSystem/edit/main/README.md#indice)
 * [Configurações do envio de email](https://github.com/Antony-Chagas/salesSystemTray/blob/main/README.md#configura%C3%A7%C3%B5es-do-envio-de-email-)
 * [Paginas do projeto](https://github.com/Antony-Chagas/salesSystem/edit/main/README.md#indice)
-* 
+
 
 ## Descrição do Projeto 📰
 * Sistema para cadastro de vendas para vendedores.
@@ -74,7 +74,7 @@ php artisan migrate
  
  Site Mailtrap: https://mailtrap.io/
 
- Configuração de conexão feita no arquivo .env, a os dados conexão varia para cada conta, acesse o sistema mailtrap e verifique os dados específico.
+ Configuração de conexão feita no arquivo .env, os dados conexão varia para cada conta, acesse o sistema mailtrap e verifique os dados específico.
  
  Exemplo de configuração:
 ~~~php
