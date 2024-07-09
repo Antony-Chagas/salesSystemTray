@@ -80,4 +80,13 @@ class SaleController extends Controller
 
         return redirect()->route('sales.index');
     }
+
+
+    public function saleHistoric()
+    {
+        $sales = $this->sale->all();
+        
+        return view('historic', ['sales' => $sales]);
+    }
+
 }

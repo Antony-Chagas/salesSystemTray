@@ -71,4 +71,5 @@ class SellerController extends Controller
         $this->seller->where('id', $id)->delete();
         return redirect()->route('sellers.index');
     }
+
 }

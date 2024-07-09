@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-    <title>Editar vendas</title>
-</head>
+@extends('template')
 
 <body>
     </div>
@@ -27,11 +18,8 @@
             @endif
             <div class="col">
 
-            </div>
-
-
-
             <h2>Editar venda</h2>
+
 
             <form action="{{ route('sales.update', ['sale'=> $sale -> id])}}" method="POST">
                 @csrf
@@ -60,9 +48,8 @@
                     <button type="submit" class="btn btn-primary">Editar</button>
                 </div>
             </form>
-
-            <a href="/sellers" class="btn btn-primary">Voltar</a>
-        </div>
+           
+        <a href="/sellers" class="btn btn-primary">Voltar</a>
     </div>
     </div>
 </body>

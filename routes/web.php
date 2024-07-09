@@ -33,6 +33,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 //Configurando as rotas acima conforme a documentação do laravel, pode ser substituída com apenas a rota abaixo
 Route::resource('sellers', SellerController::class);
 
+
 //Rota vendas
 
 //Route::get('/sales', [SaleController::class, 'index'])->name('sales.index');
@@ -45,6 +46,9 @@ Route::resource('sellers', SellerController::class);
 
 //Configurando as rotas acima conforme a documentação do laravel, pode ser substituída com apenas a rota abaixo
 Route::resource('sales', SaleController::class);
+
+//Rota de histórico de vendas
+Route::get('/historic', [SaleController::class, 'saleHistoric'])->name('sale.historic');
 
 //Rota de envio de e-mail
 Route::get('/send-email', [SendEmailController::class, 'sendEmail'])->name('sale.send-email');

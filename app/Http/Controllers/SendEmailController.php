@@ -16,9 +16,6 @@ class SendEmailController extends Controller
     // Enviar email
     public function sendEmail()
     {
-        
-
-
             //Obter a data atual
             $dataAtural = Carbon::now()->toDateString();
         
