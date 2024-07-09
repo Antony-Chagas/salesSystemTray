@@ -1,7 +1,16 @@
 @extends('template')
 
 <body>
+    <nav class="navbar navbar-light bg-light">
+        <form class="form-inline" action="{{ route('sale.historic')}}">
 
+            <input type="number" name="id" id="id" value="{{$id}}" class="form-control mr-sm-2"  placeholder="ID da venda" aria-label="Search">
+
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> Pesquisar </button>
+
+                <a href="{{ route('sale.historic')}}" class="btn btn-outline-warning  my-2 my-sm-0" type="submit"> Limpar </a>      
+        </form>
+    </nav>
 
     <table class="table">
         <thead class="thead-light">
