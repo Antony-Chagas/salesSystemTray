@@ -91,14 +91,12 @@ MAIL_TO="antony.thiago445@gmail.com"
 ~~~
 **`Botão de envio`**
 
-![image](https://github.com/Antony-Chagas/salesSystemTray/assets/104728389/8101fb07-4744-4dae-b356-63536c614452)
+![image](https://github.com/Antony-Chagas/salesSystemTray/assets/104728389/61dcb02e-cd9e-40eb-ab46-f57687c5c7a7)
 
 **`Formato que é enviado os E-mails`**
 
 ![image](https://github.com/Antony-Chagas/salesSystemTray/assets/104728389/041c79a1-97e8-4a7e-9ed0-94c3ccd58a59)
 
-
- 
 ## Paginas do projeto 🌐
 
 **`Litas de vendedores:`**
@@ -109,7 +107,6 @@ MAIL_TO="antony.thiago445@gmail.com"
 
 **`Histórico de vendas:`**
 ![chrome-capture-2024-7-9](https://github.com/Antony-Chagas/salesSystemTray/assets/104728389/f4737f6d-7eab-4bf2-8173-59b43bd51722)
-
 
 #### `Vendedor:`
 * **`Editar` **
