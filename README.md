@@ -44,6 +44,7 @@ Projeto para processo seletivo da vaga de programador Júnior na empresa Tray.
   ![image](https://github.com/Antony-Chagas/salesSystem/assets/104728389/ce1e5437-e1ba-49ee-9a5b-0e04e6b8351f)
 
 * **Editor de código**: O que foi utilizado no desenvolvimento foi Visual Studio Code, download https://code.visualstudio.com/download
+* Faça o download do composer para instalar as dependecias. Site https://getcomposer.org/
 * Acesse o XAMPP e ligue o Apache e MySQL
   
  ![image](https://github.com/Antony-Chagas/salesSystem/assets/104728389/f5fe1b87-6776-4039-8fb7-8e9220469452)
@@ -110,11 +111,11 @@ MAIL_TO="antony.thiago445@gmail.com"
 ![chrome-capture-2024-7-9](https://github.com/Antony-Chagas/salesSystemTray/assets/104728389/f4737f6d-7eab-4bf2-8173-59b43bd51722)
 
 #### `Vendedor:`
-* **`Editar` **
+* **`Editar`**
 ![image](https://github.com/Antony-Chagas/salesSystem/assets/104728389/99323925-0a2b-4ab5-ba51-94ec553ffe51)
 * `Criar`
 ![image](https://github.com/Antony-Chagas/salesSystem/assets/104728389/6499ad89-b01a-4feb-9b2d-9aa19653e456)
-* `Deletar`
+* **`Deletar`**
 ![image](https://github.com/Antony-Chagas/salesSystem/assets/104728389/ff747b84-aa04-4644-a43e-6fa9e9f88569)
 
 #### `Vendas`
