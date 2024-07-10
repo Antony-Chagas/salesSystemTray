@@ -9,7 +9,7 @@ Projeto para processo seletivo da vaga de programador Júnior na empresa Tray.
 * [Funcionalidades do projeto](https://github.com/Antony-Chagas/salesSystemTray/tree/Ajustes?tab=readme-ov-file#funcionalidades-do-projeto-%EF%B8%8F)
 * [Como de usar a aplicação](https://github.com/Antony-Chagas/salesSystemTray/tree/Ajustes?tab=readme-ov-file#como-usar-a-aplica%C3%A7%C3%A3o-%EF%B8%8F)
 * [Banco de dados](https://github.com/Antony-Chagas/salesSystemTray/tree/Ajustes?tab=readme-ov-file#banco-de-dados)
-* [Configurações do envio de email](https://github.com/Antony-Chagas/salesSystemTray/blob/main/README.md#configura%C3%A7%C3%B5es-do-envio-de-email-)
+* [Configurações do envio de email](https://github.com/Antony-Chagas/salesSystemTray/tree/Ajustes?tab=readme-ov-file#configura%C3%A7%C3%B5es-do-envio-de-email-)
 * [Paginas do projeto](https://github.com/Antony-Chagas/salesSystemTray/tree/Ajustes?tab=readme-ov-file#paginas-do-projeto-)
 
 
@@ -33,6 +33,7 @@ Projeto para processo seletivo da vaga de programador Júnior na empresa Tray.
 
 * Criar, deletar, atualizar e visualizar vendas realizadas.
 * Criar, deletar, atualizar e visualizar vendedores.
+* Enviar e-mails diários com as vendas do dia.
 
 ## Como usar a aplicação ⚙️
 
