@@ -1,7 +1,5 @@
 # Sistema de vendas 🛍️
 
-Projeto para processo seletivo da vaga de programador Júnior na empresa Tray.
-
 ## Indice
 * [Índice](https://github.com/Antony-Chagas/salesSystemTray/blob/main/README.md#indice)
 * [Descrição do Projeto](https://github.com/Antony-Chagas/salesSystemTray?tab=readme-ov-file#descri%C3%A7%C3%A3o-do-projeto-)
